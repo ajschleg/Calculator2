@@ -1,0 +1,23 @@
+project (assignemt4) {
+	exename = assignment4
+	install = .
+
+	specific (make, gnauce) {
+		compile_flags += -std=c++11
+	}
+	
+	Source_Files {
+		driver.cpp
+		Calculator2.cpp
+		Expr_Tree_Builder.cpp
+		Eval_Expr_Tree.cpp
+		Print_Inorder_Expression.cpp
+	}
+
+	Template_Files {
+		Base_Array.cpp
+		Array.cpp
+		Stack.cpp
+		array_auto_ptr.cpp
+	}
+}
